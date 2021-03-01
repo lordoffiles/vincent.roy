@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta cahrset="utf-8">
+        <title>Vincent Roy Online</title>
+    </head>
+    <body>
+    <header>
+        <h1>Projects</h1>
+        <p>
+            Here's a somewhat complete list of my projects.
+        </p>
+    </header>
+    
+    <article>
+        {% for project in project_list%}
+            <div>
+                <h3>{{project.title}}</h3>
+                <p>{{project.description}}</p>
+                {% comment %} add image somehow {% endcomment %}
+                <!--img src="{{p.main_image.url}}"/-->                
+            </div>
+        {% endfor %}
+    </article>
+
+    </body>
+</html>
